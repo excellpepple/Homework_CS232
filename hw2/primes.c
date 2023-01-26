@@ -30,13 +30,16 @@ int main(int argc, const char** argv){
         /* TODO: fill in the code that outputs the prime numbers */
         /*   in the range [lowerBound,upperBound] in ascending order */
         for (int i = lowerBound ; i <= upperBound ; i++){
+            // tracks if the number is prime
             int isPrime = 1;
             for (int j = 2; j < i; j++) {
+                // checks if the number is divisible by other numbers
                 if (i % j == 0) {
                     isPrime = 0;
                     break;
                 }
             }
+            // Displays the number
             if (isPrime){
                 printf("%d\n", i);
             }
