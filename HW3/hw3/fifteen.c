@@ -224,6 +224,8 @@ void init(void)
         }
     }
 
+
+
 }
 
 /**
@@ -240,6 +242,8 @@ void draw(void)
         printf("\n");
 
     }
+    printf("\n");
+
 //    for (int i = 0; i < d; i++){
 //        for (int j = 0; j < d; j++){
 //            if (winState[i][j] != 0){
@@ -249,7 +253,7 @@ void draw(void)
 //            }
 //        }
 //        printf("\n");
-//
+////
 //    }
 }
 
@@ -265,48 +269,40 @@ struct BoardPosition{
 
 short move(int tile)
 {
-//    int temp;
-    short flag = 0;
     struct BoardPosition position;
     for (int i = 0; i < d; i++) {
         for(int j = 0; j < d; j++) {
             if (tile == board[i][j]) {
                 position.i = i;
                 position.j = j;
-//                temp = board[i][j];
-
                 break;
             }
         }
     }
-//    int moveTarget;
-    //check  the left side for space
-    if (board[position.i][position.j-1] == 0){
-        board[position.i][position.j] = board[position.i][position.j-1];
-        board[position.i][position.j-1] = tile;
-        flag = 1;
-    }
-    // check the right side for space
-    else if(board[position.i][position.j+1] == 0){
-        board[position.i][position.j] = board[position.i][position.j+1];
-        board[position.i][position.j+1] = tile;
-        flag = 1;
-    }
-    // check the top side for space
-    else if(board[position.i+1][position.j] == 0 ){
-        board[position.i][position.j] = board[position.i][position.j];
-        board[position.i+1][position.j] = tile;
-        flag = 1;
-    }
     // check the bottom side for space
-    else if(board[position.i-1][position.j] == 0){
-        board[position.i][position.j] = board[position.i][position.j];
-        board[position.i-1][position.j] = tile;
-        flag = 1;
-    } else{
-        flag = 0;
+    if(position.i + 1 < d && board[position.i + 1][position.j] == 0) {
+        board[position.i + 1][position.j] = board[position.i][position.j];
+        board[position.i][position.j] = 0;
+        return 1;
+    // check the top side for space
+    } else if(position.i - 1 > -1 && board[position.i - 1][position.j] == 0) {
+        board[position.i - 1][position.j] = board[position.i][position.j];
+        board[position.i][position.j] = 0;
+        return 1;
+    // check the right side for space
+    } else if(position.j + 1 < d && board[position.i][position.j + 1] == 0) {
+        board[position.i][position.j + 1] = board[position.i][position.j];
+        board[position.i][position.j] = 0;
+        return 1;
+        //check  the left side for space
+    } else if(position.j - 1 > -1 && board[position.i][position.j - 1] == 0) {
+        board[position.i][position.j - 1] = board[position.i][position.j];
+        board[position.i][position.j] = 0;
+        return 1;
+        /* Otherwise, return a fail. */
+    } else {
+        return 0;
     }
-    return flag;
 }
 
 /**
