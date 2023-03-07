@@ -118,7 +118,13 @@ int main(int argc, char** argv){
  */
 int contains(const struct listNode *pNode, const char *addr){
   // TODO: complete this
-
+  if (pNode->next != NULL){
+      if(strcmp(pNode->addr, addr) == 0){
+          return 1;
+      } else{
+          contains(pNode->next, addr);
+      }
+  }
   return 0;
 }
     
@@ -129,6 +135,15 @@ int contains(const struct listNode *pNode, const char *addr){
  */
 void insertBack(struct listNode *pNode, const char *addr){
   // TODO: complete this
+  if (pNode->next != NULL){
+      insertBack(pNode->next, addr);
+  }else{
+      struct listNode *newNode = malloc(sizeof(struct listNode));
+      strncpy(newNode->addr, addr, MAX_ADDR_LENGTH);
+      newNode->next = NULL;
+      pNode->next = newNode;
+
+  }
 }
 
 
@@ -138,6 +153,10 @@ void insertBack(struct listNode *pNode, const char *addr){
  */
 void printAddresses(const struct listNode *pNode){
   // TODO: complete this
+  if (pNode->next != NULL){
+      printf("%s\n",pNode->addr);
+      printAddresses(pNode->next);
+  }
 }
 
 /*
@@ -145,6 +164,12 @@ void printAddresses(const struct listNode *pNode){
  */
 void destroyList(struct listNode *pNode){
   // TODO: complete this
+  if (pNode->next != NULL){
+      destroyList(pNode->next);
+      free(pNode);
+  }else{
+      free(pNode);
+  }
 }
   
 
@@ -157,7 +182,7 @@ int getLink(const char* srcAddr, char* link, const int maxLinkLength){
 
   FILE *pipe;
 
-  snprintf(buffer, bufSize, "curl -s \"%s\" | python3 getLinks.py", srcAddr);
+  snprintf(buffer, bufSize, "curl -s \"%s\" | python getLinks.py", srcAddr);
 
   pipe = popen(buffer, "r");
   if(pipe == NULL){
