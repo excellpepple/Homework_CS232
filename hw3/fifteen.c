@@ -312,7 +312,7 @@ short move(int tile)
 short won(void)
 {
     // TODO
-    int flag = 0;
+    int flag = 1;
     for (int i = 0; i < d; i++) {
         for(int j = 0; j < d; j++) {
             if (board[i][j] != winState[i][j]) {
