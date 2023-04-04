@@ -16,14 +16,11 @@ typedef struct trieNode {
     struct trieNode *alphabet[26];
 } Node;
 
-/* NOTE: int return values can be used to indicate errors (typically non-zero)
-   or success (typically zero return value) */
-
-/* TODO: change this return type */
 struct trieNode* indexPage(const char* url);
 
-int addWordOccurrence(const char* word, const int wordLength, Node *node, int cursor
-        /* TODO: other parameters you need */);
+void newNode(Node **node);
+
+int addWordOccurrence(const char* word, const int wordLength, Node *node, int cursor);
 
 void printTrieContents(char *word, const Node *node, int cursor);
 
@@ -34,9 +31,6 @@ int getText(const char* srcAddr, char* buffer, const int bufSize);
 
 
 int main(int argc, char** argv){
-    /* TODO: write the (simple) main function */
-
-    /* argv[1] will be the URL to index, if argc > 1 */
     if (argc < 2){
         printf("Illegal arguments Exception\n");
         printf("Usage: indexPage <url>\n");
@@ -47,52 +41,9 @@ int main(int argc, char** argv){
     printTrieContents(letters, root, 0);
     freeTrieMemory(root);
 
-    // This is how to make the root node and add stuff to the trie
-//    trieNode *root = indexPage(argv[1]);
-
-//
-//  /*
-//    There are two methods of adding a word to the trie:
-//        call the function with root and cursor position of -1
-//        call the function with the first letter and cursor position of 0
-//          the first letter's int value minus the int value of 'a' will be it's position in the alphabet array
-//  */
-//  char *word = "apple";
-//  int wordLen = strlen(word);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//  addWordOccurrence(word, wordLen, root, -1);
-//
-//  word = "banana";
-//  wordLen = strlen(word);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//
-//  word = "carrot";
-//  wordLen = strlen(word);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//  addWordOccurrence(word, wordLen, root, -1);
-//  addWordOccurrence(word, wordLen, root, -1);
-//
-//  word = "aaron";
-//  wordLen = strlen(word);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//
-//  word = "breach";
-//  wordLen = strlen(word);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//  addWordOccurrence(word, wordLen, root->alphabet[word[0] - 'a'], 0);
-//  addWordOccurrence(word, wordLen, root, -1);
-//
-//  // This is a buffer string I use to print the trie
-//  char buffer[500];
-//  printTrieContents(buffer, root, 0);
-//
-//  freeTrieMemory(root);
     return 0;
 }
 
-/* TODO: define the functions corresponding to the above prototypes */
-
-/* TODO: change this return type */
 struct trieNode* indexPage(const char* url)
 {
 
@@ -103,16 +54,13 @@ struct trieNode* indexPage(const char* url)
         free(buffer);
         return NULL;
     }
-    printf("%s", url);
+    printf("%s\n", url);
     struct trieNode* rt = malloc(sizeof(Node));
-    rt = malloc(sizeof(Node));
-    for (int i = 0; i < 26; i++) {
-        // Each letter node is initialized, given its corresponding letter, and given a count of -1 to signify it has not been used in a word
-        rt->alphabet[i] = malloc(sizeof(Node));
-        rt->alphabet[i]->letter = 'a' + i;
-        rt->alphabet[i]->count = -1;
-    }
-    char * invalid = "\t\n01123456789_.,:;-?!()[]{}\'\"";
+	rt->count = -2;
+
+	newNode(&rt);
+
+    char * invalid = "\t\n 01123456789_.,:;-?!()[]{}\'\"";
     char *words = strtok(buffer, invalid);
 
     while(words != NULL) {
@@ -122,7 +70,7 @@ struct trieNode* indexPage(const char* url)
         }
         if (words[0] != '\0'){
             printf("\t%s\n", words);
-            addWordOccurrence(words, strlen(words), rt, 0);
+            addWordOccurrence(words, strlen(words), rt, -1);
         }
         words = strtok(NULL, invalid);
     }
@@ -130,16 +78,20 @@ struct trieNode* indexPage(const char* url)
     return rt;
 }
 
+void newNode(Node **node) {
+  for (int i = 0; i < 26; i++) {
+    (*node)->alphabet[i] = malloc(sizeof(Node));
+    (*node)->alphabet[i]->letter = 'a' + i;
+    (*node)->alphabet[i]->count = -1;
+  }
+}
+
 int addWordOccurrence(const char* word, const int wordLength, Node *node, int cursor)
 {
     // If the current node was an unused letter, "initialize" it
     if (node->count == -1) {
         node->count = 0;
-        for (int i = 0; i < 26; i++) {
-            node->alphabet[i] = malloc(sizeof(Node));
-            node->alphabet[i]->letter = 'a' + i;
-            node->alphabet[i]->count = -1;
-        }
+        newNode(&node);
     }
 
     // If the next cursor position is past the length of the word, increase the count of the current letter
@@ -174,7 +126,7 @@ void printTrieContents(char *buffer, const Node *node, int cursor)
         if (node->alphabet[i]->count > 0) {
             buffer[cursor] = node->alphabet[i]->letter;
             buffer[cursor + 1] = '\0';
-            printf("%s : %d\n", buffer, node->alphabet[i]->count);
+            printf("%s: %d\n", buffer, node->alphabet[i]->count);
             printTrieContents(buffer, node->alphabet[i], cursor + 1);
             continue;
         }

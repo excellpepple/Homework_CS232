@@ -125,6 +125,9 @@ int contains(const struct listNode *pNode, const char *addr){
           contains(pNode->next, addr);
       }
   }
+    if(strcmp(pNode->addr, addr) == 0){
+        return 1;
+    }
   return 0;
 }
     
@@ -157,6 +160,7 @@ void printAddresses(const struct listNode *pNode){
       printf("%s\n",pNode->addr);
       printAddresses(pNode->next);
   }
+    printf("%s\n",pNode->addr);
 }
 
 /*
