@@ -1,0 +1,821 @@
+==1003746== Memcheck, a memory error detector
+==1003746== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1003746== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1003746== Command: ./part1/webSearch ./webSearchSol/urlFiles/train1.txt 10 10
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4C3CD1A: strcat (vg_replace_strmem.c:330)
+==1003746==    by 0x4010AD: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Invalid read of size 1
+==1003746==    at 0x401041: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  Address 0x5228177 is 0 bytes after a block of size 231 alloc'd
+==1003746==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003746==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Invalid read of size 1
+==1003746==    at 0x401069: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  Address 0x5228177 is 0 bytes after a block of size 231 alloc'd
+==1003746==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003746==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x401046: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x40106E: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Invalid read of size 1
+==1003746==    at 0x401055: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  Address 0x52282d0 is 32 bytes before a block of size 32 in arena "client"
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Conditional jump or move depends on uninitialised value(s)
+==1003746==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003755== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==1003755==    at 0x4E7FE7B: execve (in /usr/lib64/libc-2.28.so)
+==1003755==    by 0x4F66A94: __spawni_child (in /usr/lib64/libc-2.28.so)
+==1003755==    by 0x4E80E72: clone (in /usr/lib64/libc-2.28.so)
+==1003755==  Address 0x522bc90 is 0 bytes after a block of size 0 alloc'd
+==1003755==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003755==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003755==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003755== 
+==1003746== Invalid write of size 1
+==1003746==    at 0x4014EA: getText (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400FDF: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  Address 0x522bc90 is 0 bytes after a block of size 0 alloc'd
+==1003746==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003746==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== Invalid write of size 8
+==1003746==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==1003746== 
+==1003746== 
+==1003746== Process terminating with default action of signal 11 (SIGSEGV)
+==1003746==  Access not within mapped region at address 0x0
+==1003746==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003746==  If you believe this happened as a result of a stack
+==1003746==  overflow in your program's main thread (unlikely but
+==1003746==  possible), you can try to increase the size of the
+==1003746==  main thread stack using the --main-stacksize= flag.
+==1003746==  The main thread stack size used in this run was 8388608.
+==1003746== 
+==1003746== HEAP SUMMARY:
+==1003746==     in use at exit: 13,317 bytes in 38 blocks
+==1003746==   total heap usage: 50 allocs, 12 frees, 127,402 bytes allocated
+==1003746== 
+==1003746== 0 bytes in 1 blocks are definitely lost in loss record 1 of 16
+==1003746==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003746==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003746==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003746== 
+==1003746== LEAK SUMMARY:
+==1003746==    definitely lost: 0 bytes in 1 blocks
+==1003746==    indirectly lost: 0 bytes in 0 blocks
+==1003746==      possibly lost: 0 bytes in 0 blocks
+==1003746==    still reachable: 13,317 bytes in 37 blocks
+==1003746==         suppressed: 0 bytes in 0 blocks
+==1003746== Reachable blocks (those to which a pointer was found) are not shown.
+==1003746== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1003746== 
+==1003746== Use --track-origins=yes to see where uninitialised values come from
+==1003746== For lists of detected and suppressed errors, rerun with: -s
+==1003746== ERROR SUMMARY: 199630 errors from 18 contexts (suppressed: 0 from 0)
+==1003767== Memcheck, a memory error detector
+==1003767== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1003767== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1003767== Command: ./part1/webSearch ./webSearchSol/urlFiles/train2.txt 10 10
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4C3CD1A: strcat (vg_replace_strmem.c:330)
+==1003767==    by 0x4010AD: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Invalid read of size 1
+==1003767==    at 0x401041: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  Address 0x522818a is 0 bytes after a block of size 250 alloc'd
+==1003767==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003767==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Invalid read of size 1
+==1003767==    at 0x401069: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  Address 0x522818a is 0 bytes after a block of size 250 alloc'd
+==1003767==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003767==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x401046: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x40106E: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Invalid read of size 1
+==1003767==    at 0x401055: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  Address 0x52282e0 is 32 bytes before a block of size 32 in arena "client"
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Conditional jump or move depends on uninitialised value(s)
+==1003767==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003791== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==1003791==    at 0x4E7FE7B: execve (in /usr/lib64/libc-2.28.so)
+==1003791==    by 0x4F66A94: __spawni_child (in /usr/lib64/libc-2.28.so)
+==1003791==    by 0x4E80E72: clone (in /usr/lib64/libc-2.28.so)
+==1003791==  Address 0x522c160 is 0 bytes after a block of size 0 alloc'd
+==1003791==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003791==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003791==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003791== 
+==1003767== Invalid write of size 1
+==1003767==    at 0x4014EA: getText (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400FDF: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  Address 0x522c160 is 0 bytes after a block of size 0 alloc'd
+==1003767==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003767==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== Invalid write of size 8
+==1003767==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==1003767== 
+==1003767== 
+==1003767== Process terminating with default action of signal 11 (SIGSEGV)
+==1003767==  Access not within mapped region at address 0x0
+==1003767==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003767==  If you believe this happened as a result of a stack
+==1003767==  overflow in your program's main thread (unlikely but
+==1003767==  possible), you can try to increase the size of the
+==1003767==  main thread stack using the --main-stacksize= flag.
+==1003767==  The main thread stack size used in this run was 8388608.
+==1003767== 
+==1003767== HEAP SUMMARY:
+==1003767==     in use at exit: 14,245 bytes in 42 blocks
+==1003767==   total heap usage: 54 allocs, 12 frees, 128,349 bytes allocated
+==1003767== 
+==1003767== 0 bytes in 1 blocks are definitely lost in loss record 1 of 19
+==1003767==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003767==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003767==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003767== 
+==1003767== LEAK SUMMARY:
+==1003767==    definitely lost: 0 bytes in 1 blocks
+==1003767==    indirectly lost: 0 bytes in 0 blocks
+==1003767==      possibly lost: 0 bytes in 0 blocks
+==1003767==    still reachable: 14,245 bytes in 41 blocks
+==1003767==         suppressed: 0 bytes in 0 blocks
+==1003767== Reachable blocks (those to which a pointer was found) are not shown.
+==1003767== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1003767== 
+==1003767== Use --track-origins=yes to see where uninitialised values come from
+==1003767== For lists of detected and suppressed errors, rerun with: -s
+==1003767== ERROR SUMMARY: 199604 errors from 20 contexts (suppressed: 0 from 0)
+==1003800== Memcheck, a memory error detector
+==1003800== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1003800== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1003800== Command: ./part1/webSearch ./webSearchSol/urlFiles/test0.txt 100 1427195
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4C3CD1A: strcat (vg_replace_strmem.c:330)
+==1003800==    by 0x4010AD: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Invalid read of size 1
+==1003800==    at 0x401041: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x5228222 is 0 bytes after a block of size 402 alloc'd
+==1003800==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003800==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Invalid read of size 1
+==1003800==    at 0x401069: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x5228222 is 0 bytes after a block of size 402 alloc'd
+==1003800==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003800==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x401046: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x40106E: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Invalid read of size 1
+==1003800==    at 0x401055: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x5228380 is 32 bytes before a block of size 32 in arena "client"
+==1003800== 
+==1003800== Invalid read of size 1
+==1003800==    at 0x40107D: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x522ad78 is 24 bytes before an unallocated block of size 4,072,016 in arena "client"
+==1003800== 
+==1003800== Invalid read of size 1
+==1003800==    at 0x401091: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x522ad78 is 24 bytes before an unallocated block of size 4,072,016 in arena "client"
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Conditional jump or move depends on uninitialised value(s)
+==1003800==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003818== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==1003818==    at 0x4E7FE7B: execve (in /usr/lib64/libc-2.28.so)
+==1003818==    by 0x4F66A94: __spawni_child (in /usr/lib64/libc-2.28.so)
+==1003818==    by 0x4E80E72: clone (in /usr/lib64/libc-2.28.so)
+==1003818==  Address 0x522c0d0 is 0 bytes after a block of size 0 alloc'd
+==1003818==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003818==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003818==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003818== 
+==1003800== Invalid write of size 1
+==1003800==    at 0x4014EA: getText (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400FDF: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x522c0d0 is 0 bytes after a block of size 0 alloc'd
+==1003800==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003800==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== Invalid write of size 8
+==1003800==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==1003800== 
+==1003800== 
+==1003800== Process terminating with default action of signal 11 (SIGSEGV)
+==1003800==  Access not within mapped region at address 0x0
+==1003800==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003800==  If you believe this happened as a result of a stack
+==1003800==  overflow in your program's main thread (unlikely but
+==1003800==  possible), you can try to increase the size of the
+==1003800==  main thread stack using the --main-stacksize= flag.
+==1003800==  The main thread stack size used in this run was 8388608.
+==1003800== 
+==1003800== HEAP SUMMARY:
+==1003800==     in use at exit: 14,013 bytes in 41 blocks
+==1003800==   total heap usage: 53 allocs, 12 frees, 128,269 bytes allocated
+==1003800== 
+==1003800== 0 bytes in 1 blocks are definitely lost in loss record 1 of 17
+==1003800==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003800==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003800==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003800== 
+==1003800== LEAK SUMMARY:
+==1003800==    definitely lost: 0 bytes in 1 blocks
+==1003800==    indirectly lost: 0 bytes in 0 blocks
+==1003800==      possibly lost: 0 bytes in 0 blocks
+==1003800==    still reachable: 14,013 bytes in 40 blocks
+==1003800==         suppressed: 0 bytes in 0 blocks
+==1003800== Reachable blocks (those to which a pointer was found) are not shown.
+==1003800== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1003800== 
+==1003800== Use --track-origins=yes to see where uninitialised values come from
+==1003800== For lists of detected and suppressed errors, rerun with: -s
+==1003800== ERROR SUMMARY: 199285 errors from 22 contexts (suppressed: 0 from 0)
+==1003828== Memcheck, a memory error detector
+==1003828== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1003828== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1003828== Command: ./part1/webSearch ./webSearchSol/urlFiles/test1.txt 100 1427195
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4C3CD1A: strcat (vg_replace_strmem.c:330)
+==1003828==    by 0x4010AD: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Invalid read of size 1
+==1003828==    at 0x401041: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x5228172 is 0 bytes after a block of size 226 alloc'd
+==1003828==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003828==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Invalid read of size 1
+==1003828==    at 0x401069: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x5228172 is 0 bytes after a block of size 226 alloc'd
+==1003828==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003828==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x401046: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x40106E: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Invalid read of size 1
+==1003828==    at 0x401055: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x52282d0 is 32 bytes before a block of size 32 in arena "client"
+==1003828== 
+==1003828== Invalid read of size 1
+==1003828==    at 0x401091: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x522acc0 is 32 bytes before an unallocated block of size 4,072,192 in arena "client"
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Conditional jump or move depends on uninitialised value(s)
+==1003828==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003839== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==1003839==    at 0x4E7FE7B: execve (in /usr/lib64/libc-2.28.so)
+==1003839==    by 0x4F66A94: __spawni_child (in /usr/lib64/libc-2.28.so)
+==1003839==    by 0x4E80E72: clone (in /usr/lib64/libc-2.28.so)
+==1003839==  Address 0x522c020 is 0 bytes after a block of size 0 alloc'd
+==1003839==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003839==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003839==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003839== 
+==1003828== Invalid write of size 1
+==1003828==    at 0x4014EA: getText (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400FDF: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x522c020 is 0 bytes after a block of size 0 alloc'd
+==1003828==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003828==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== Invalid write of size 8
+==1003828==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==1003828== 
+==1003828== 
+==1003828== Process terminating with default action of signal 11 (SIGSEGV)
+==1003828==  Access not within mapped region at address 0x0
+==1003828==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003828==  If you believe this happened as a result of a stack
+==1003828==  overflow in your program's main thread (unlikely but
+==1003828==  possible), you can try to increase the size of the
+==1003828==  main thread stack using the --main-stacksize= flag.
+==1003828==  The main thread stack size used in this run was 8388608.
+==1003828== 
+==1003828== HEAP SUMMARY:
+==1003828==     in use at exit: 14,013 bytes in 41 blocks
+==1003828==   total heap usage: 53 allocs, 12 frees, 128,093 bytes allocated
+==1003828== 
+==1003828== 0 bytes in 1 blocks are definitely lost in loss record 1 of 18
+==1003828==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003828==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003828==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003828== 
+==1003828== LEAK SUMMARY:
+==1003828==    definitely lost: 0 bytes in 1 blocks
+==1003828==    indirectly lost: 0 bytes in 0 blocks
+==1003828==      possibly lost: 0 bytes in 0 blocks
+==1003828==    still reachable: 14,013 bytes in 40 blocks
+==1003828==         suppressed: 0 bytes in 0 blocks
+==1003828== Reachable blocks (those to which a pointer was found) are not shown.
+==1003828== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1003828== 
+==1003828== Use --track-origins=yes to see where uninitialised values come from
+==1003828== For lists of detected and suppressed errors, rerun with: -s
+==1003828== ERROR SUMMARY: 199661 errors from 20 contexts (suppressed: 0 from 0)
+==1003847== Memcheck, a memory error detector
+==1003847== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1003847== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==1003847== Command: ./part1/webSearch ./webSearchSol/urlFiles/test2.txt 100 1427195
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4C3CD1A: strcat (vg_replace_strmem.c:330)
+==1003847==    by 0x4010AD: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401272: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4011C7: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4011FC: addWordOccurrence (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x4010DA: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Invalid read of size 1
+==1003847==    at 0x401041: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  Address 0x5228bff is 0 bytes after a block of size 2,927 alloc'd
+==1003847==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003847==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Invalid read of size 1
+==1003847==    at 0x401069: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  Address 0x5228bff is 0 bytes after a block of size 2,927 alloc'd
+==1003847==    at 0x4C3C096: realloc (vg_replace_malloc.c:1437)
+==1003847==    by 0x401007: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x401046: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x40106E: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Invalid read of size 1
+==1003847==    at 0x401055: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  Address 0x5228d50 is 32 bytes before a block of size 32 in arena "client"
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Conditional jump or move depends on uninitialised value(s)
+==1003847==    at 0x4012E4: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x401314: printtrieContents (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400EAF: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003867== Syscall param execve(argv[i]) points to unaddressable byte(s)
+==1003867==    at 0x4E7FE7B: execve (in /usr/lib64/libc-2.28.so)
+==1003867==    by 0x4F66A94: __spawni_child (in /usr/lib64/libc-2.28.so)
+==1003867==    by 0x4E80E72: clone (in /usr/lib64/libc-2.28.so)
+==1003867==  Address 0x5263220 is 0 bytes after a block of size 0 alloc'd
+==1003867==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003867==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003867==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003867== 
+==1003847== Invalid write of size 1
+==1003847==    at 0x4014EA: getText (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400FDF: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  Address 0x5263220 is 0 bytes after a block of size 0 alloc'd
+==1003847==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003847==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== Invalid write of size 8
+==1003847==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  Address 0x0 is not stack'd, malloc'd or (recently) free'd
+==1003847== 
+==1003847== 
+==1003847== Process terminating with default action of signal 11 (SIGSEGV)
+==1003847==  Access not within mapped region at address 0x0
+==1003847==    at 0x400E70: main (in /home/willei01/project3/part1/webSearch)
+==1003847==  If you believe this happened as a result of a stack
+==1003847==  overflow in your program's main thread (unlikely but
+==1003847==  possible), you can try to increase the size of the
+==1003847==  main thread stack using the --main-stacksize= flag.
+==1003847==  The main thread stack size used in this run was 8388608.
+==1003847== 
+==1003847== HEAP SUMMARY:
+==1003847==     in use at exit: 184,277 bytes in 775 blocks
+==1003847==   total heap usage: 787 allocs, 12 frees, 301,058 bytes allocated
+==1003847== 
+==1003847== 0 bytes in 1 blocks are definitely lost in loss record 1 of 68
+==1003847==    at 0x4C37135: malloc (vg_replace_malloc.c:381)
+==1003847==    by 0x400FC5: indexPage (in /home/willei01/project3/part1/webSearch)
+==1003847==    by 0x400E62: main (in /home/willei01/project3/part1/webSearch)
+==1003847== 
+==1003847== LEAK SUMMARY:
+==1003847==    definitely lost: 0 bytes in 1 blocks
+==1003847==    indirectly lost: 0 bytes in 0 blocks
+==1003847==      possibly lost: 0 bytes in 0 blocks
+==1003847==    still reachable: 184,277 bytes in 774 blocks
+==1003847==         suppressed: 0 bytes in 0 blocks
+==1003847== Reachable blocks (those to which a pointer was found) are not shown.
+==1003847== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1003847== 
+==1003847== Use --track-origins=yes to see where uninitialised values come from
+==1003847== For lists of detected and suppressed errors, rerun with: -s
+==1003847== ERROR SUMMARY: 205232 errors from 22 contexts (suppressed: 0 from 0)
